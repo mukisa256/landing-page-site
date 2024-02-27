@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/4baa8d075d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+
+            <div class="header-right" id="header">
+                <a>+256 750739558</a>
+                <a class="fa-solid fa-envelope"></a>
+                <a>ndabiemmanuelmukisa@gmail.com</a>
+                <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#default" class="logo" id="h1">LANDING PAGE</a>
+            <div class="nav">
+                <a href="" class="active">Buy News</a>
+                <a href="">Contact</a>
+                <a href="">Testimonials</a>
+                <a href="">Page</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <a href="">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <div class="text">
+                <h1>Software engineering</h1>
+                <p>Software engineering is an engineering-based approach to software development.<br>
+                    A software engineer is a person who applies the engineering design process
+                    to design,<br> develop, test, maintain, and evaluate computer software.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="item">
+            <h2><img src="images/log.png" alt="Logo"> Deploying Sites</h2>
+            <p>Pick the right hosting provider.</p>
+        </div>
+        <div class="item">
+            <h2><img src="images/log2.jpg" alt="Logo"> Support Team</h2>
+            <p>Provide assistance and guidance to customers<br>clients, or usersof a product .</p>
+        </div>
+        <div class="item">
+            <h2><img src="images/log3png.png" alt="Logo"> Management</h2>
+            <p>We work smarter, not harder, leading to <br>greater productivityand reduced stress.</p>
+        </div>
+    </div>
+    
+
+
+    <script>
+        function myfunction() {
+            var x = document.getElementById("header");
+            if (x.className === "header-right") {
+                x.className += " responsive";
+            } else {
+                x.className = "header-right";
+            }
+        } 
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    </div>
+</body>
+
+</html>
