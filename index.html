@@ -32,73 +32,137 @@
 
             </div>
         </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">Buy News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">testmornal</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Landing Page</a></li>
+                <li class="hideOnMobile"><a href="#">Buy News</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">testmornal</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Page</a></li>
+                <li class="hideOnMobile"><a href="#">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
 
-        <div class="topnav" id="myTopnav">
-            <a href="#default" class="logo" id="h1">LANDING PAGE</a>
-            <div class="nav">
-                <a href="" class="active">Buy News</a>
-                <a href="">Contact</a>
-                <a href="">Testimonials</a>
-                <a href="">Page</a>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <a href="">Home</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
         <div class="article">
-            <div class="text">
+            <div class="text mySlides fade">
                 <h1>Software engineering</h1>
                 <p>Software engineering is an engineering-based approach to software development.<br>
                     A software engineer is a person who applies the engineering design process
                     to design,<br> develop, test, maintain, and evaluate computer software.</p>
+                <button class="BTN">CREATIVITY</button>
+            </div>
+            <div class="text mySlides fade">
+                <h1>Software engineering</h1>
+                <p>Software engineering is an engineering-based approach to software development.<br>
+                    A software engineer is a person who applies the engineering design process
+                    to design,<br> develop, test, maintain, and evaluate computer software.</p>
+                <button class="BTN">TEAM WORK</button>
+            </div>
+            <div class="text mySlides fade">
+                <h1>Software engineering</h1>
+                <p>Software engineering is an engineering-based approach to software development.<br>
+                    A software engineer is a person who applies the engineering design process
+                    to design,<br> develop, test, maintain, and evaluate computer software.</p>
+                <button class="BTN">TIME</button>
+            </div>
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="item">
-            <h2><img src="images/log.png" alt="Logo"> Deploying Sites</h2>
-            <p>Pick the right hosting provider.</p>
+    <!--footer selection-->
+    <section>
+        <div class="card">
+            <h2><img src="images/log.png">Deploying</h2>
+            <p>Pick the right host Provider</p>
         </div>
-        <div class="item">
-            <h2><img src="images/log2.jpg" alt="Logo"> Support Team</h2>
+        <div class="card">
+            <h2><img src="images/log2.jpg">Support Team</h2>
             <p>Provide assistance and guidance to customers<br>clients, or usersof a product .</p>
         </div>
-        <div class="item">
-            <h2><img src="images/log3png.png" alt="Logo"> Management</h2>
+        <div class="card">
+            <h2><img src="images/log3png.png">Management</h2>
             <p>We work smarter, not harder, leading to <br>greater productivityand reduced stress.</p>
         </div>
+    </section>
+
+    <div class="main">
+        <div id="column">
+            <div class="line">
+                <h2>ABOUT US</h2>
+                <span class="line-separator"></span>
+            </div>
+            <h2>15 years, we passionate about achieving<br> better results for our clients</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur<br> adipisicing elit. Explicabo, minima quo!
+                Accusantium porro hic<br> nam eligendi, quia perferendis
+                incidunt dolores beatae, rem numquam repellat<br> temporibus ab ducimus cupiditate ullam labore?</p>
+            <button>READ MORE</button>
+        </div>
+        <div id="sidebar">
+            <img src="images/istockphoto-1364917563-612x612.jpg" class="image">
+            <div class="border"></div>
+        </div>
     </div>
-    
 
 
-    <script>
-        function myfunction() {
-            var x = document.getElementById("header");
-            if (x.className === "header-right") {
-                x.className += " responsive";
-            } else {
-                x.className = "header-right";
-            }
-        } 
-    </script>
+    <div class="service-cards">
+        <h2>OUR SERVICES</h2>
+        <span class="line-separator"></span>
+        <div class="service-section">
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        } 
-    </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+            <div class="image-cards">
+                <img src="images/user2.webp" alt="">
+                <div class="overlay">
+
+                    <p><i class="fa-solid fa-bullhorn"></i>USER EXPERIENCE</p>
+                </div>
+
+            </div>
+
+            <div class="image-cards">
+                <img src="images/images.jpg" alt="">
+                <div class="overlay">
+
+                    <p><i class="fa-solid fa-pen-nib"></i>CREATIVE DESIGN</p>
+                </div>
+            </div>
+
+            <div class="image-cards">
+                <div class="overlay" id="overlay3">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>RETINA READY</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
